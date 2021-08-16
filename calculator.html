@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <div class="main-cal">
+        <form name="calculator">
+            <input type="text" name="answer" id="disp-answer">
+            <div class="layr2">
+                <input type="button" id='clear-btn' class="oper" value='C' onclick='calculator.answer.value="" '>
+                <input type="button" class="oper" value="=" onclick='calculator.answer.value=eval(calculator.answer.value)'>
+            </div>
+            <div class="layr1"> <input type="button" class="main-num" value="7" onclick="calculator.answer.value+='7'">
+                <input type="button" class="main-num" value="8" onclick="calculator.answer.value+='8'">
+                <input type="button" class="main-num" value="8" onclick="calculator.answer.value+='8'">
+                <input type="button" class="oper" value="*" onclick="calculator.answer.value+='* '">
+            </div>
+            <div class="layr1"> <input type="button" class="main-num" value="4" onclick="calculator.answer.value+='4 '">
+                <input type="button" class="main-num" value="5" onclick="calculator.answer.value+='5'">
+                <input type="button" class="main-num" value="8" onclick="calculator.answer.value+='8'">
+                <input type="button" class="oper" value="-" onclick="calculator.answer.value+='-'">
+            </div>
+            <div class="layr1"> <input type="button" class="main-num" value="1" onclick="calculator.answer.value+='1'">
+                <input type="button" class="main-num" value="2" onclick=" calculator.answer.value+='2' ">
+                <input type="button" class="main-num" value="3" onclick="calculator.answer.value+='3'">
+                <input type="button" class="oper" value="+" onclick="calculator.answer.value+='+'">
+            </div>
+            <div class="layr1">
+                <input type="button" class="oper" value="." onclick="calculator.answer.value+='.'">
+                <input type="button" class="main-num" value="0" onclick="calculator.answer.value+='0 '">
+                <input type="button" class="oper" value="%" onclick="calculator.answer.value+='%'">
+                <input type="button" class="oper" value="/" onclick="calculator.answer.value+='/'"></div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>

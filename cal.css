@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img.jpg);
+    background-size: 100% 100%;
+}
+
+.main-cal {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 0 20px 1px green;
+}
+
+#disp-answer {
+    width: inherit;
+    height: 100px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: #303030;
+}
+
+.layr1 {
+    width: inherit;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.layr2 {
+    width: inherit;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    flex: 1;
+    font-size: 1.4rem;
+    color: white;
+    border: 1px solid#504f4f;
+    outline: none;
+}
+
+input:hover {
+    background-color: #474747;
+    border: 1px solid grey;
+}
+
+.main-num {
+    background-color: #101011;
+    color: white;
+}
+
+.oper {
+    background-color: #303030;
+}
+
+#clearbtn {
+    font-size: 1rem;
+}
